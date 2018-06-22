@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     resources :entries, defaults: { format: 'json' }
     get 'my_portfolio', to: 'users#my_portfolio'
     get 'search_stocks', to: 'stocks#search'
-    resources :user_stocks, only: [:create]
+    resources :user_stocks, only: [:create, :destroy]
 end
