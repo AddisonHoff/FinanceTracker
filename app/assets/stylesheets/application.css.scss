@@ -13,6 +13,7 @@
  *= require devise_bootstrap_views
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
 .results-block {
@@ -21,4 +22,26 @@
 
 .no-padding {
     padding: 0 !important;
+}
+
+.left-padding {
+    padding-left: 15px !important;
+}
+
+.logout {
+    padding-left: 0;
+}
+
+.user_name {
+    padding-top: 15px;
+}
+
+.nav.navbar-right li {
+    .btn {
+        color: #fff !important;
+        margin: 5%;
+    }
+    .btn-danger:hover {
+        background-color: darken(#d9534f, 20%) !important;
+    }
 }
